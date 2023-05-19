@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <ul>
+      <li><a href="main.html">Number Converter</a></li>
+      <li><a href="developer.html">Developers</a></li>
+    </ul> 
+    <br><br>  
+    <title>Number Converter</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+
+  <body>
+    <h1>Number Converter</h1>
+    <form>
+      <br>
+      <label for="base">From: </label>
+      <select id="base">
+        <option value="2">Binary</option>
+        <option value="10">Decimal</option>
+        <option value="16">Hexadecimal</option>
+      </select>
+      <br><br>
+      <label for="output_base">To: </label>
+      <select id="output_base">
+        <option value="2">Binary</option>
+        <option value="10">Decimal</option>
+        <option value="16">Hexadecimal</option>
+      </select>
+      <br><br>
+      <label for="input">Enter Number:</label>
+      <input  type="text" id="input">
+      <br><br>
+      <button type="button" onclick="convert()">Convert</button>
+      <br>
+        <p class="result" id="result"></p>
+        <script src="script.js"></script>
+    </form>
+    <br>
+  </body>
+</html>
